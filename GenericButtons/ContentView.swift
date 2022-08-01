@@ -15,18 +15,21 @@ struct ContentView: View {
             } label: {
                 Text("Primary Button")
             }.buttonStyle(CustomButtonStyle(type: .primary))
+                .padding(margin.small.rawValue)
             
             Button {
                 print("You tapped on Secondary button")
             } label: {
                 Text("Secondary Button")
-            }.buttonStyle(CustomButtonStyle(tintColor: .green, type: .secondary, marginPadding: .large))
+            }.buttonStyle(CustomButtonStyle(tintColor: .green, type: .secondary))
+                .padding(margin.large.rawValue)
             
             Button {
                 print("You tapped on Teritary button")
             } label: {
                 Text("Teritary Button")
             }.buttonStyle(CustomButtonStyle(tintColor: .yellow, type: .teritary, style: .title3))
+                .padding(margin.medium.rawValue)
         }
 
     }
