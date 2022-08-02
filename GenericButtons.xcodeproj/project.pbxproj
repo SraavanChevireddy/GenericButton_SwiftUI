@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1892A73A289935DB00CD8AF5 /* DefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892A739289935DB00CD8AF5 /* DefaultView.swift */; };
+		1892A73C289935E600CD8AF5 /* PrimaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892A73B289935E600CD8AF5 /* PrimaryView.swift */; };
+		1892A73E289935F500CD8AF5 /* SecondaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892A73D289935F500CD8AF5 /* SecondaryView.swift */; };
 		3C46AF08288755FF00F868CA /* GenericButtonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C46AF07288755FE00F868CA /* GenericButtonsApp.swift */; };
 		3C46AF0A288755FF00F868CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C46AF09288755FF00F868CA /* ContentView.swift */; };
 		3C46AF0C2887560000F868CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C46AF0B2887560000F868CA /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1892A739289935DB00CD8AF5 /* DefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultView.swift; sourceTree = "<group>"; };
+		1892A73B289935E600CD8AF5 /* PrimaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryView.swift; sourceTree = "<group>"; };
+		1892A73D289935F500CD8AF5 /* SecondaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryView.swift; sourceTree = "<group>"; };
 		3C46AF04288755FE00F868CA /* GenericButtons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericButtons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C46AF07288755FE00F868CA /* GenericButtonsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericButtonsApp.swift; sourceTree = "<group>"; };
 		3C46AF09288755FF00F868CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +42,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1892A734289924EB00CD8AF5 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				1892A739289935DB00CD8AF5 /* DefaultView.swift */,
+				1892A73B289935E600CD8AF5 /* PrimaryView.swift */,
+				1892A73D289935F500CD8AF5 /* SecondaryView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		3C46AEFB288755FE00F868CA = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +71,7 @@
 		3C46AF06288755FE00F868CA /* GenericButtons */ = {
 			isa = PBXGroup;
 			children = (
+				1892A734289924EB00CD8AF5 /* Buttons */,
 				3C46AF1A2887577D00F868CA /* Constants */,
 				3C46AF162887561E00F868CA /* ViewModifiers */,
 				3C46AF07288755FE00F868CA /* GenericButtonsApp.swift */,
@@ -170,7 +187,10 @@
 				3C46AF1C2887579200F868CA /* ViewMargins.swift in Sources */,
 				3C46AF0A288755FF00F868CA /* ContentView.swift in Sources */,
 				3C46AF192887564900F868CA /* StyleModifiers.swift in Sources */,
+				1892A73C289935E600CD8AF5 /* PrimaryView.swift in Sources */,
+				1892A73E289935F500CD8AF5 /* SecondaryView.swift in Sources */,
 				3C46AF08288755FF00F868CA /* GenericButtonsApp.swift in Sources */,
+				1892A73A289935DB00CD8AF5 /* DefaultView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

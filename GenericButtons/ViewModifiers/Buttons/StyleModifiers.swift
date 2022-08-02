@@ -22,8 +22,10 @@ struct CustomButtonStyle: ButtonStyle {
     
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .font(.system(style, design: .rounded))
-            .padding(marginPadding.rawValue)
+            .font(.custom("Roboto, Medium", size: bth_fontSize))
+            .padding(.leading, marginPadding.rawValue)
+            .padding(.trailing, marginPadding.rawValue)
+            .frame(height: bth_height)
             .background(appliedTint)
             .foregroundColor(appliedForeground)
             .clipShape(Capsule())
@@ -42,6 +44,25 @@ struct CustomButtonStyle: ButtonStyle {
         }
     }
     
+    private var bth_height : CGFloat{
+        if marginPadding == .small{
+            return 24.0
+        }else if marginPadding == .medium{
+            return 38.0
+        }else{
+            return 54.0
+        }
+    }
+    
+    private var bth_fontSize : CGFloat{
+        if marginPadding == .small{
+            return 12
+        }else if marginPadding == .medium{
+            return 13
+        }else{
+            return 17
+        }
+    }
     private var appliedForeground : Color{
         if type == .primary{
             return foregroundColor
